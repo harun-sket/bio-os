@@ -1,0 +1,7 @@
+{
+  "name": "bio-os-sandbox",
+  "dockerfile": "e2b.Dockerfile",
+  "cpu_count": 2,
+  "memory_mb": 2048,
+  "start_cmd": "node index.js --help"
+}

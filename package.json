@@ -1,17 +1,31 @@
 {
   "name": "@hynaweb/bio-os",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "Experimental Synthetic Biology Simulator. Fail-Closed Kernel for DNA. NOT FOR LAB OR MEDICAL USE.",
   "main": "index.js",
   "bin": {
     "bio-os": "./index.js"
   },
   "type": "module",
+  "scripts": {
+    "start": "node index.js",
+    "test": "node test.js",
+    "demo": "node index.js -f test_files/valid_peptide.fasta --strict",
+    "demo:compare": "node index.js -f test_files/valid_peptide.fasta --compare test_files/synonymous_variant.fasta",
+    "demo:frameshift": "node index.js -f test_files/broken_frame.fasta"
+  },
   "dependencies": {
     "chalk": "^5.3.0",
     "commander": "^11.0.0"
   },
   "license": "UNLICENSED",
-  "author": "HYNAWEB",
-  "keywords": ["synthetic-biology", "dna", "bioinformatics", "cli"]
+  "author": "Harun (HYNAWEB)",
+  "keywords": [
+    "synthetic-biology",
+    "dna",
+    "bioinformatics",
+    "cli",
+    "fail-closed",
+    "bio-kernel"
+  ]
 }
